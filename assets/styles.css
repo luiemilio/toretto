@@ -1,0 +1,103 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+html {
+  display: flex;
+  flex-direction: row;
+  background-color: #48AEF0;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.ghibli-main-div {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.all-movies-btn {
+  border-radius: 3px;
+  width: 100px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #c53137;
+}
+
+.style-movies-btn {
+  border-radius: 3px;
+  width: 120px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #c53137;
+}
+
+.movie-list {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.movie-list-style {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.todo-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.todo-main-div input {
+  border: 1px solid black;
+}
