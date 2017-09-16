@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -14,6 +17,7 @@ span, article, footer, time, small {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -35,27 +39,73 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
 
+}
 button,
 input[type="submit"] {
   cursor: pointer;
 }
 
 html {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
   background-color: #48AEF0;
 }
 
 .main-div {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+  /*flex-direction: row;*/
+  /*align-items: flex-start;*/
+  /*justify-content: center;*/
+  /*align-content: space-around;*/
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.header {
+  align-self: center;
+  font-size: 50px;
+}
+
+.all-apps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.j-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.j-q-a {
+  width: 500px;
+}
+
+.j-div button {
+  /*border: 1px solid black;*/
+  border-radius: 3px;
+  width: 90px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #c53137;
+  /*margin-left: 5px;*/
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.ghibli-todo {
+  display: flex;
 }
 
 .ghibli-main-div {
@@ -70,6 +120,11 @@ h1 {
   margin-left: 5px;
   text-align: center;
   background-color: #c53137;
+  font-size: 13px;
+}
+
+.all-movies-div {
+  display: flex;
 }
 
 .style-movies-btn {
@@ -78,7 +133,10 @@ h1 {
   margin-left: 5px;
   text-align: center;
   background-color: #c53137;
+  font-size: 13px;
 }
+
+
 
 .movie-list {
   list-style: none;
@@ -95,9 +153,19 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
+  align-self: flex-start;
+  /*margin-left: 100px;*/
 }
 
 .todo-main-div input {
   border: 1px solid black;
+}
+
+.todo-functions {
+  display: flex;
+}
+
+.todo-functions button {
+  border: 1px solid black;
+  margin-left: 5px;
 }

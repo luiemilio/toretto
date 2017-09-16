@@ -3,43 +3,62 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Studio Ghibli Movies</title>
+    <title>Toretto Demo</title>
     <script type="text/javascript" src="./lib/bundle.js"></script>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
     <div class="main-div">
-      <div class="ghibli-main-div">
-        <h1>Studio Ghibli Movies</h1>
-        <div class="all-movies-div">
-          <button type="button" class="all-movies-btn" name="button">Get all movies</button>
-
-
-        </div>
-        <div class="">
-          <ul class="movie-list">
-
-          </ul>
-        </div>
-        <div class="movie-details-div">
-          <ul class="movie-details">
-
-          </ul>
-        </div>
-
+      <h1 class="header">Toretto Demo</h1>
+      <div class="description">
+        <p>This is a small demo for the Toretto DOM manipulation library.</p>
+        <p>It showcases some of the most important functions. Including but not limited to:</p>
+        <p>Adding and removing HTML elements, AJAX requests and adding event listeners.</p>
       </div>
+      <div class="all-apps">
+        <div class="j-div">
+          <h1>Random Jeopardy Question</h1>
+          <button class="q-btn" type="button" name="button">Get Question</button>
+          <div class="j-q-a">
+            <div class="j-q">
 
-      <div class="todo-main-div">
+            </div>
+            <div class="j-a">
+            </div>
+          </div>
 
-        <h1>Todo App!</h1>
-        <form class="todo-form">
-          <input type="text" class="todo-text-input" value="">
-          <input class="todo-form-submit" type="submit" name="submit" value="Add todo!">
-        </form>
+        </div>
 
-        <ul class="todo-ul">
+        <div class="ghibli-main-div">
+          <h1>Studio Ghibli Movies</h1>
 
-        </ul>
+          <div class="all-movies-div">
+            <button type="button" class="all-movies-btn" name="button">Get all movies</button>
+          </div>
+
+          <div class="movie-list-div">
+            <ul class="movie-list">
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="todo-main-div">
+
+          <h1>Todo App!</h1>
+          <div class="todo-functions">
+            <form class="todo-form">
+              <input type="text" class="todo-text-input" value="">
+              <input class="todo-form-submit" type="submit" name="submit" value="Add Todo!">
+            </form>
+            <button class="clear-todo-btn" type="button" name="button">Clear Todos!</button>
+          </div>
+
+          <ul class="todo-ul">
+
+          </ul>
+        </div>
+
       </div>
 
     </div>
