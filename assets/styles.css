@@ -1,5 +1,5 @@
+/*@import url("font-awesome.min.css");*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
@@ -93,8 +93,8 @@ html {
 .j-div button {
   /*border: 1px solid black;*/
   border-radius: 3px;
-  width: 90px;
-  font-size: 13px;
+  width: 120px;
+  font-size: 17px;
   text-align: center;
   background-color: #c53137;
   /*margin-left: 5px;*/
@@ -111,16 +111,16 @@ h1 {
 .ghibli-main-div {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 380px;
 }
 
 .all-movies-btn {
   border-radius: 3px;
-  width: 100px;
+  width: 150px;
   margin-left: 5px;
   text-align: center;
   background-color: #c53137;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .all-movies-div {
@@ -129,11 +129,11 @@ h1 {
 
 .style-movies-btn {
   border-radius: 3px;
-  width: 120px;
+  width: 150px;
   margin-left: 5px;
   text-align: center;
   background-color: #c53137;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 
@@ -157,8 +157,19 @@ h1 {
   /*margin-left: 100px;*/
 }
 
-.todo-main-div input {
-  border: 1px solid black;
+.todo-main-div input[type="submit"] {
+  border-radius: 3px;
+  width: 150px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #c53137;
+  font-size: 17px;
+}
+
+
+.todo-main-div input[type="text"] {
+  border-radius: 3px;
+  background-color: white;
 }
 
 .todo-functions {
@@ -166,6 +177,30 @@ h1 {
 }
 
 .todo-functions button {
-  border: 1px solid black;
+  border-radius: 3px;
+  width: 150px;
   margin-left: 5px;
+  text-align: center;
+  background-color: #c53137;
+  font-size: 17px;
+}
+
+.link-footer {
+  display: flex;
+  position: fixed;
+  margin-top: 750px;
+  justify-content: center;
+  align-self: center;
+}
+
+.link-footer ul {
+  display: flex;
+}
+
+.link-footer li {
+  margin: 5px;
+}
+
+.link-footer i {
+  width: 50px;
 }
