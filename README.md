@@ -4,7 +4,9 @@ A jQuery inspired, lightweight JavaScript library intended for DOM manipulation.
 
 [Demo library][link]
 
-[link]: https://luiemilio.github.io/toretto/ 
+[link]: https://luiemilio.github.io/toretto/
+
+![Demo](/toretto_demo.png)
 
 ## Functionality
 
@@ -23,6 +25,38 @@ Receives an argument that will then be set as the innerHTML of each of the eleme
 ### empty
 
 Will clear out the content the element.
+
+### ajax
+
+Makes a simple ajax request. Receives a set of options and then does the call.
+
+```javascript
+l.ajax = function (options) {
+  def = {
+    method: 'GET',
+    url: "",
+    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+    data: {},
+    success: () => {},
+    error: () => {},
+  };
+
+  options = $l.extend(def, options);
+
+  const xhr = new XMLHttpRequest();
+  xhr.open(options.method, options.url, true);
+  xhr.onload = (e) => {
+    if (xhr.status > 199 && xhr.status < 300) {
+      options.success(JSON.parse(xhr.response));
+    } else {
+      options.error(JSON.parse(xhr.response));
+    }
+  };
+
+
+  xhr.send(JSON.stringify(options.data));
+};
+```
 
 ### append
 
@@ -63,7 +97,3 @@ Adds an event handler to the element.
 ### off
 
 Removes an event handler from the element.
-
-### ajax
-
-Makes a simple ajax request. Receives a set of options and then does the call.
