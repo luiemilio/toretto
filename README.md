@@ -70,6 +70,14 @@ Returns the attribute value of an element.
 
 Adds a class to an element.
 
+```javascript
+addClass(string) {
+  this.els.forEach( (attr) => {
+    return attr.classList.add(string);
+  });
+}
+```
+
 ### removeClass
 
 Removes a class from an element.

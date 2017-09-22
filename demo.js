@@ -88,7 +88,7 @@ function appendQuestion(question) {
   $l('.j-q').append(
     `<p>Category: ${question.category.title}</p></br><p>${question.question}</p>`
   );
-  // debugger
+
   $l('.j-a').append(
     `<button class="j-a-btn" type="button" name="button">Get Answer</button>`
   );
@@ -102,7 +102,6 @@ function appendQuestion(question) {
 }
 
 function revealAnswer() {
-  // debugger
   $l('.j-a-p').attr("style", "");
 }
 
